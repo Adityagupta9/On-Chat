@@ -1,6 +1,4 @@
-// Replace with the URL of your deployed server
-const socket = io('https://your-server-url.com');  // Update this to your actual server URL
-
+const socket = io('http://localhost:8000');
 
 const form = document.getElementById('send-form');
 const messageInput = document.getElementById('message-input');
