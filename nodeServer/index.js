@@ -2,9 +2,10 @@
 
 const io = require('socket.io')(8000, {
     cors: {
-        origin: '*',  // Allow all origins for simplicity, you can also specify specific origins
+        origin: 'https://on-chat-amber.vercel.app', // Allow your deployed front-end domain
     }
 });
+
 
 const users = {};
 

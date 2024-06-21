@@ -1,4 +1,6 @@
-const socket = io('ws://on-chat-amber.vercel.app/');
+const socketIoUrl = process.env.SOCKET_IO_URL || 'https://on-chat-amber.vercel.app';
+const socket = io(socketIoUrl);
+
 
 const form = document.getElementById('send-form');
 const messageInput = document.getElementById('message-input');
