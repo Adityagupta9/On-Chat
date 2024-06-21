@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8000');
+const socket = io('wss://on-chat-amber.vercel.app/');
 
 const form = document.getElementById('send-form');
 const messageInput = document.getElementById('message-input');
