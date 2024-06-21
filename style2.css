@@ -1,0 +1,90 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: inline; /* Use flexbox to center the content */
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    font-family: 'Fresca', sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+nav p {
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0; /* Remove margin */
+}
+
+nav img {
+    height: 58px;
+    width: 70px;
+    margin: 6px; /* Adjust margin */
+}
+
+h1 {
+    color: rgb(227, 227, 227);
+    font-weight: 600;
+    font-size: 33px;
+    text-align: center;
+    margin: 20px 0; /* Add margin */
+    width: 100%; /* Full width */
+}
+
+#user-name-form {
+    position: relative;
+    left: 30%;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 33px;
+    text-align: center;
+    color: rgb(56, 0, 85);
+    background: rgb(255, 255, 255);
+    padding: 20px; /* Increase padding */
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.195);
+    height: 320px;
+}
+
+#username-input {
+    background-color: rgba(240, 248, 255, 0);
+    border-radius: 11px;
+    font-size: 16px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+    border: 1px solid rgb(48, 18, 93);
+    color: rgb(70, 0, 87);
+    width: 80%; /* Adjust width */
+    margin-bottom: 20px; /* Add space between input and button */
+}
+
+#username-input:focus {
+    outline: none;
+    background-color: #ffffff;
+}
+
+#name-submit {
+    background-color: rgb(48, 18, 93);
+    color: #ffffff;
+    border: none;
+    border-radius: 11px;
+    padding: 10px 20px;
+    font-size: 16px; /* Adjust font size */
+    cursor: pointer;
+}
+
+#name-submit:hover {
+    background-color: rgb(70, 0, 87); /* Add hover effect */
+}

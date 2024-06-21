@@ -1,0 +1,104 @@
+nav{
+    position: relative;
+    left: 45%;
+    display:flex;
+}
+nav p{
+    color: rgb(68, 68, 68);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+nav img{
+    height: 58px;
+    width: 70px;
+    display: block;
+    margin-top: 6px;
+}
+h1 {
+    color: rgb(69, 69, 69);
+    font-family: "Fresca", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    margin: -2px;
+    position: relative;
+    width: 50%;
+    left: 42%;
+}
+.container{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    height: 500px;
+    max-width: 1000px;
+    background-color: rgb(97, 15, 174);
+    border-radius: 25px;
+    overflow-y: auto;
+}
+.message{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(237, 237, 237);
+    padding: 4px 12px 6px 12px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    width:fit-content;
+    max-width: 400px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.right{
+    border-top-right-radius:0 ;
+    float: right;
+    clear: both;
+}
+.left{
+    border-top-left-radius: 0;
+    float: left;
+    clear: both;
+}
+.send-container{
+    text-align: center;
+    margin: 10px;
+}
+.center{
+    position: relative;
+    right: 40%;
+    float: right;
+    clear: both;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-size: 12px;
+    min-width: 120px;
+    text-align: center;
+}
+#message-input{
+    color: aliceblue;
+    background-color: rgb(97, 15, 174);
+    width: 50%;
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 55px;
+    border: 1px solid rgb(124, 124, 124);
+}
+#message-input:focus {
+    outline: none;
+  }
+  ::placeholder {
+    color: rgb(215, 215, 215); /* Change to your desired color */
+    opacity: 1; /* For Firefox to set the opacity of the placeholder */
+}
+#send-btn{
+    background-color: rgb(24, 0, 58);
+    color: aliceblue;
+    border: none;
+    padding: 11px;
+    border-radius: 55px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+#send-btn:hover{
+    background-color: rgb(22, 22, 22);
+}
