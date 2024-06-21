@@ -1,7 +1,11 @@
+body{
+    height: fit-content;
+}
 nav{
     position: relative;
     left: 45%;
     display:flex;
+    width: 50%;
 }
 nav p{
     color: rgb(68, 68, 68);
@@ -10,8 +14,8 @@ nav p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav img{
-    height: 58px;
-    width: 70px;
+    height: 56px;
+    width: 60px;
     display: block;
     margin-top: 6px;
 }
@@ -30,11 +34,18 @@ h1 {
     padding: 10px;
     display: block;
     margin: auto;
-    height: 500px;
+    height: 550px;
     max-width: 1000px;
-    background-color: rgb(97, 15, 174);
+    background-color: rgb(80, 11, 146);
     border-radius: 25px;
     overflow-y: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
 }
 .message{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -43,18 +54,24 @@ h1 {
     margin: 5px 20px;
     border-radius: 10px;
     width:fit-content;
-    max-width: 400px;
+    max-width: 600px;
     word-wrap: break-word;
     white-space: pre-wrap;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .right{
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+    position: relative;
     border-top-right-radius:0 ;
     float: right;
     clear: both;
 }
 .left{
+    background: linear-gradient(135deg, #95b1de 0%, #f6f7fa 100%);
+    position: relative;
+    left: 20px;
     border-top-left-radius: 0;
     float: left;
     clear: both;
@@ -74,14 +91,25 @@ h1 {
     min-width: 120px;
     text-align: center;
 }
+.profilepic{
+    clear: both;
+    position: relative;
+    top: 33px;
+    height: 30px;
+    width: 32px;
+    border-radius: 50px;
+    float: left;
+}
 #message-input{
     color: aliceblue;
-    background-color: rgb(97, 15, 174);
-    width: 50%;
-    font-size: 18px;
-    padding: 15px;
+    background-color: rgb(22, 15, 29);
+    width: 45%;
+    font-size: 15px;
+    padding: 14px;
     border-radius: 55px;
     border: 1px solid rgb(124, 124, 124);
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 #message-input:focus {
     outline: none;
@@ -91,14 +119,52 @@ h1 {
     opacity: 1; /* For Firefox to set the opacity of the placeholder */
 }
 #send-btn{
-    background-color: rgb(24, 0, 58);
+    position: relative;
+    top: 1px;
+    background-color: rgb(0, 109, 110);
     color: aliceblue;
     border: none;
-    padding: 11px;
+    padding: 12px 19px;
     border-radius: 55px;
     font-size: 20px;
     transition: 0.5s;
+    border-bottom-left-radius: 0;
+    border-top-left-radius:0 ;
 }
 #send-btn:hover{
     background-color: rgb(22, 22, 22);
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        color: rgb(69, 69, 69);
+        margin: -2px;
+        position: relative;
+        width: 85%;
+        left: 17%;
+    }
+    #message-input{
+        width: 65%;
+    }
+    nav {
+        left: 35%;
+    }
+    .message{
+        max-width: 240px;
+    }
+    #send-btn{
+        font-size: 18px;
+        padding: 13px;
+    }
+    .center{
+        position: relative;
+        right: 23%;
+        float: right;
+        clear: both;
+        background-color: rgb(40, 40, 40);
+        color: white;
+        font-size: 12px;
+        min-width: 120px;
+        text-align: center;
+    }
 }

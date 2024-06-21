@@ -21,13 +21,13 @@ nav {
 nav p {
     color: rgb(68, 68, 68);
     font-weight: 500;
-    font-size: 20px;
+    font-size: 25px;
     margin: 0; /* Remove margin */
 }
 
 nav img {
-    height: 58px;
-    width: 70px;
+    height: 56px;
+    width: 60px;
     margin: 6px; /* Adjust margin */
 }
 
@@ -87,4 +87,13 @@ h1 {
 
 #name-submit:hover {
     background-color: rgb(70, 0, 87); /* Add hover effect */
+}
+
+
+@media only screen and (max-width: 600px) {
+    #user-name-form{
+        width: 70%;
+        left: 10%;
+        top: 6em;
+    }
 }

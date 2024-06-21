@@ -15,13 +15,23 @@ var audio = new Audio('send.mp3');
 
 const append = (message, position) => {
     const messageElement = document.createElement('div');
+    
     messageElement.innerText = message;
     messageElement.classList.add('message');
     messageElement.classList.add(position);
+    if (position === "left"){
+        const profilepic = document.createElement('img')
+        profilepic.src=("./profilepic.jpg")
+        profilepic.classList.add("profilepic");
+        messageContainer.append(profilepic)
+        }
     messageContainer.append(messageElement);
+    
     if (position === "left" || position === "center") {
         audio.play();
     }
+
+    
 };
 
 // Listen for user joined
