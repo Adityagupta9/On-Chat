@@ -1,4 +1,5 @@
-const socket = io('http://localhost:8000');
+// const socket = io('https://localhost:8000');
+const socket = io("https://accessible-bubble-guavaberry.glitch.me/")
 
 const form = document.getElementById('send-form');
 const messageInput = document.getElementById('message-input');
