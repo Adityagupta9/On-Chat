@@ -71,12 +71,12 @@ socket.on('received-message', data => {
 
 // Listen for image messages
 socket.on('received-image', data => {
-    append(`${data.name}`, data.image, "left", true);
+    append(`~${data.name}`, data.image, "left", true);
 });
 
 // Listen for video messages
 socket.on('received-video', data => {
-    append(`${data.name}`, data.video, "left", false, true);
+    append(`~${data.name}`, data.video, "left", false, true);
 });
 
 // Listen for users leaving
