@@ -1,12 +1,56 @@
 body{
     height: fit-content;
+    background-color: #ffffff;
 }
 nav{
     margin-top: -10px;
     position: relative;
-    left: 45%;
+    left: 26%;
     display:flex;
-    width: 50%;
+    width: 60%;
+}
+#user-count-people{
+    position: relative;
+    top: 5PX;
+    height: 20px;
+    width: 20px;
+}
+#user-icon-count{
+    margin-top: 20px;
+    background-color: #000033;
+    padding: 0px 23px;
+    border-radius: 50px;
+    height: 45px;
+    width: 85px;
+}
+#user-count-number{
+    font-size: 15px;
+    background-color: #000033;
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.blinking-dot {
+    position: relative;
+    left: -13px;
+    top: 19px;
+    width: 8px; 
+    height: 8px; 
+    background-color: #00ff59; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+    animation: blink-animation 1s infinite; 
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 0; /* Start with the dot invisible */
+    }
+    50% {
+        opacity: 1; /* Make the dot fully visible halfway through */
+    }
+    100% {
+        opacity: 0; /* Fade out the dot at the end */
+    }
 }
 nav p{
     color: rgb(68, 68, 68);
@@ -15,6 +59,7 @@ nav p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav img{
+    margin-left: 176px;
     height: 56px;
     width: 60px;
     display: block;
@@ -202,16 +247,16 @@ p.message-content {
     position: relative;
     top: -2px;
     margin: 7px;
-    height: 31px;
-    width: 31px;
+    height: 29px;
+    width: 29px;
     transition: 0.3s;
 }
 #media-video{
     position: relative;
     top: -2px;
     margin: 5px;
-    height: 35px;
-    width: 35px;
+    height: 33px;
+    width: 33px;
     transition: 0.3s;
 }
 .icon-label{
@@ -225,12 +270,13 @@ p.message-content {
     transition: 0.3s;
 }
 .icon-label:hover {
-    background-color: #828282; 
+    background-color: #9c9c9c; 
 }
 
 .icon-label svg {
     display: block;
 }
+
 
 /* Style for the icon */
 .choose-file i {
@@ -247,8 +293,35 @@ p.message-content {
     #message-input{
         width: 65%;
     }
+    #user-icon-count{
+        width:100px;
+        position: relative;
+        top: -8px;
+    }
+    #user-icon-number{
+        font-size: 5px;
+    }
+    #user-count-number{
+        position: relative;
+        top: 2px;
+        font-size: 13px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    #user-count-people{
+        height: 17px;
+        width: 17px;
+    }
     nav {
-        left: 35%;
+        left: 0%;
+        width: 100%;
+    }
+    nav img{
+        margin-left: 0px;
+    }
+    nav p{
+        position: relative;
+        width: 300px;
     }
     .message{
         max-width: 240px;

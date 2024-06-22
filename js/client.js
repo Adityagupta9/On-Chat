@@ -4,6 +4,7 @@ const messageInput = document.getElementById('message-input');
 const imageInput = document.getElementById('image-input');
 const videoInput = document.getElementById('video-input');
 const messageContainer = document.querySelector('.container');
+const userCountDisplay = document.getElementById('user-count-number');
 
 // Retrieve the username from localStorage
 const userName = localStorage.getItem('username');
@@ -119,4 +120,15 @@ videoInput.addEventListener('change', () => {
         };
         reader.readAsDataURL(file);
     }
+});
+
+const updateUserCount = (count) => {
+    // Update the user count displayed
+    document.getElementById('user-count-number').innerText =`Online ${count}` ;
+};
+
+
+// Listen for user count updates
+socket.on('user-count', count => {
+    updateUserCount(count);
 });
