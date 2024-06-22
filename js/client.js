@@ -66,7 +66,7 @@ socket.on('user-joined', name => {
 
 // Listen for messages
 socket.on('received-message', data => {
-    append(`${data.name}`, data.message, "left");
+    append(`~${data.name}`, data.message, "left");
 });
 
 // Listen for image messages

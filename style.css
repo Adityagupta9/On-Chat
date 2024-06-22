@@ -137,7 +137,9 @@ p.message-content {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.311);
 }
+
 #message-input:focus {
     outline: none;
   }
@@ -157,6 +159,7 @@ p.message-content {
     transition: 0.5s;
     border-bottom-left-radius: 0;
     border-top-left-radius:0 ;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
 }
 #send-btn:hover{
     background-color: rgb(22, 22, 22);
@@ -193,6 +196,7 @@ p.message-content {
     font-size: 25px;
     border-radius: 50px;
     color: rgb(20, 6, 39);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.516);
 }
 #media-image{
     position: relative;
