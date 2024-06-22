@@ -294,7 +294,7 @@ p.message-content {
         width: 65%;
     }
     #user-icon-count{
-        width:100px;
+        width:120px;
         position: relative;
         top: -8px;
     }
@@ -317,7 +317,7 @@ p.message-content {
         width: 100%;
     }
     nav img{
-        margin-left: 0px;
+        margin-left: 28px;
     }
     nav p{
         position: relative;
