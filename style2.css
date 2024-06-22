@@ -4,7 +4,7 @@ body, html {
     display: inline; /* Use flexbox to center the content */
     justify-content: center;
     align-items: center;
-    background-color: blueviolet;
+    background: linear-gradient(135deg, #1a1a1a, #000033, #000000);
     font-family: 'Fresca', sans-serif;
 }
 
@@ -50,8 +50,8 @@ h1 {
     font-weight: 400;
     font-size: 33px;
     text-align: center;
-    color: rgb(56, 0, 85);
-    background: rgb(255, 255, 255);
+    color: rgb(3, 0, 85);
+    background: linear-gradient(135deg, white, #8888a0);
     padding: 20px; /* Increase padding */
     width: 40%;
     border-radius: 15px;
@@ -65,18 +65,18 @@ h1 {
     font-size: 16px; /* Adjust font size */
     padding: 10px; /* Adjust padding */
     border: 1px solid rgb(48, 18, 93);
-    color: rgb(70, 0, 87);
+    color: rgb(14, 0, 87);
     width: 80%; /* Adjust width */
     margin-bottom: 20px; /* Add space between input and button */
 }
 
 #username-input:focus {
     outline: none;
-    background-color: #ffffff;
+    background-color: #ffffff00;
 }
 
 #name-submit {
-    background-color: rgb(48, 18, 93);
+    background: linear-gradient(135deg, #1a1a1a, #000033, #000000);
     color: #ffffff;
     border: none;
     border-radius: 11px;
@@ -86,7 +86,7 @@ h1 {
 }
 
 #name-submit:hover {
-    background-color: rgb(70, 0, 87); /* Add hover effect */
+    background-color: rgb(135, 135, 135); /* Add hover effect */
 }
 
 

@@ -36,7 +36,7 @@ h1 {
     margin: auto;
     height: 550px;
     max-width: 1000px;
-    background-color: rgb(80, 11, 146);
+    background: linear-gradient(135deg, #1a1a1a, #000033, #000000);
     border-radius: 25px;
     overflow-y: auto;
     scrollbar-width: none; 
@@ -49,7 +49,6 @@ h1 {
 }
 .message{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(237, 237, 237);
     padding: 4px 12px 6px 12px;
     margin: 5px 20px;
     border-radius: 10px;
@@ -59,50 +58,75 @@ h1 {
     white-space: pre-wrap;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-
+p.message-content {
+    margin: 0px;
+}
 .right{
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
+    
     position: relative;
     border-top-right-radius:0 ;
     float: right;
     clear: both;
 }
 .left{
-    background: linear-gradient(135deg, #95b1de 0%, #f6f7fa 100%);
+    margin: 0px;
     position: relative;
     left: 20px;
     border-top-left-radius: 0;
     float: left;
     clear: both;
 }
+.message.left {
+    background: linear-gradient(135deg, #9ab7e5 0%, #f5f7fa 100%);
+}
+.message.right{
+    background: linear-gradient(135deg, #f5f7fa 0%, #9ab7e5 100%);
+}
 .send-container{
     text-align: center;
     margin: 10px;
 }
+.message.center{
+    background-color: rgb(40, 40, 40);
+    color: white;
+}
+
 .center{
     position: relative;
-    right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the text horizontally */
+    right: 33%;
     float: right;
     clear: both;
-    background-color: rgb(40, 40, 40);
     color: white;
     font-size: 12px;
     min-width: 120px;
     text-align: center;
 }
 .profilepic{
-    clear: both;
     position: relative;
-    top: 33px;
+    right: 18px;
+    bottom: -20px;
     height: 30px;
     width: 32px;
     border-radius: 50px;
     float: left;
 }
+.left .message-name{
+    font-weight: 600;
+    color: #47208f;
+}
+.right .message-name{
+    font-weight: 600;
+    color: rgb(0, 90, 0);
+}
+.center .message-name{
+    color:rgb(255, 255, 255);
+}
 #message-input{
     color: aliceblue;
-    background-color: rgb(22, 15, 29);
+    background: linear-gradient(135deg, #1a1a1a, #000033, #000000);
     width: 45%;
     font-size: 15px;
     padding: 14px;
@@ -157,11 +181,14 @@ h1 {
         padding: 13px;
     }
     .center{
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the text horizontally */
+        text-align: center;
         position: relative;
-        right: 23%;
+        right: 15%;
         float: right;
         clear: both;
-        background-color: rgb(40, 40, 40);
         color: white;
         font-size: 12px;
         min-width: 120px;
