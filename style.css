@@ -2,6 +2,7 @@ body{
     height: fit-content;
 }
 nav{
+    margin-top: -10px;
     position: relative;
     left: 45%;
     display:flex;
@@ -34,13 +35,14 @@ h1 {
     padding: 10px;
     display: block;
     margin: auto;
-    height: 550px;
+    height: 470px;
     max-width: 1000px;
     background: linear-gradient(135deg, #1a1a1a, #000033, #000000);
     border-radius: 25px;
     overflow-y: auto;
     scrollbar-width: none; 
     -ms-overflow-style: none;  
+    margin-bottom: -10px;
 }
 
 /* For Webkit browsers (Chrome, Safari) */
@@ -134,6 +136,7 @@ p.message-content {
     border: 1px solid rgb(124, 124, 124);
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    margin-bottom: 15px;
 }
 #message-input:focus {
     outline: none;
@@ -159,6 +162,76 @@ p.message-content {
     background-color: rgb(22, 22, 22);
 }
 
+.message-image {
+    max-width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.choose-file {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.message-video {
+    max-width: 100%; 
+    max-height: 250px; 
+    display: block; 
+    margin-top: 10px; 
+    border-radius: 10px;
+}
+.media-share{
+    background-color: #bdc1c380;
+    width: 160px;
+    margin: auto;
+    padding: 8px 26px 4px 26px;
+    font-size: 25px;
+    border-radius: 50px;
+    color: rgb(20, 6, 39);
+}
+#media-image{
+    position: relative;
+    top: -2px;
+    margin: 7px;
+    height: 31px;
+    width: 31px;
+    transition: 0.3s;
+}
+#media-video{
+    position: relative;
+    top: -2px;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+    transition: 0.3s;
+}
+.icon-label{
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #82828200; /* Change this to your desired background color */
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.icon-label:hover {
+    background-color: #828282; 
+}
+
+.icon-label svg {
+    display: block;
+}
+
+/* Style for the icon */
+.choose-file i {
+    margin-right: 10px; /* Optional: Adjust spacing between icon and button */
+}
 @media only screen and (max-width: 600px) {
     h1{
         color: rgb(69, 69, 69);
@@ -194,4 +267,29 @@ p.message-content {
         min-width: 120px;
         text-align: center;
     }
+    .icon-label{
+        padding: 0px;
+    }
+    .icon-label:hover{
+        padding: 0px;
+    }
+    .media-share{
+        background-color: #bdc1c380;
+        width: 160px;
+    }
+    #media-image{
+        margin: 7px;
+        height: 27px;
+        width: 27px;
+    }
+    
+    #media-video{
+        margin: 7px;
+        height: 31px;
+        width: 31px;
+    }
+    .container{
+        height: 510px;
+    }
 }
+
