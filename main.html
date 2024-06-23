@@ -4,25 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>On Chat</title>
-    <link rel="stylesheet" href="style.css"> <!-- Correct path to style.css -->
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fresca&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-2bAXk4ycmKKO3FzHmgeW0f3whEdUL8csh0sgOwXYQkIuKfHv0s5WYYuIGCEmUsOhVtEJ6uVLYq0Dk5G8bjb9fg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/cec726274c.js" crossorigin="anonymous"></script>
-    <script defer src="https://accessible-bubble-guavaberry.glitch.me/socket.io/socket.io.js"></script> <!-- Socket.IO library -->
-    <script defer src="js/client.js"></script> <!-- Correct path to client.js -->
+    <script defer src="https://accessible-bubble-guavaberry.glitch.me/socket.io/socket.io.js"></script> 
+    <script defer src="js/client.js"></script> 
 </head>
 <body>
     <nav>
         
         <div id="user-icon-count">
-            <!-- Updated SVG icon -->
             <div class="blinking-dot"></div>
             <svg id="user-count-people" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff" transform="matrix(1, 0, 0, 1, 0, 0)">
                 <path d="M19 15C21.2091 15 23 16.7909 23 19V21H21M16 10.874C17.7252 10.4299 19 8.86383 19 6.99999C19 5.13615 17.7252 3.57005 16 3.12601M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7ZM5 15H13C15.2091 15 17 16.7909 17 19V21H1V19C1 16.7909 2.79086 15 5 15Z" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            <!-- Span to display the user count -->
+            
             <span id="user-count-number">Online 0</span>
         </div>
 
@@ -47,7 +46,6 @@
                 </label>
                 <input id="video-input" type="file" accept="video/*" style="display: none;">
                 <label for="video-input" class="icon-label" id="choose-video-btn">
-                    <!-- Embed SVG directly here -->
                     <svg id="media-video" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1348_126234)">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M3 4C1.34315 4 0 5.34315 0 7V17C0 18.6569 1.34315 20 3 20H13C14.6569 20 16 18.6569 16 17V14.5307L20.7286 18.4249C22.0334 19.4994 24.0001 18.5713 24.0001 16.8811V7.28972C24.0001 5.54447 21.9211 4.63648 20.6408 5.8226L16 10.1222V7C16 5.34315 14.6569 4 13 4H3ZM2 7C2 6.44772 2.44772 6 3 6H13C13.5523 6 14 6.44772 14 7V17C14 17.5523 13.5523 18 13 18H3C2.44772 18 2 17.5523 2 17V7ZM16.5193 12.3675L22.0001 7.28972V16.8811L16.5193 12.3675Z" fill="#000000"/>

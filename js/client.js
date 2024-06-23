@@ -6,7 +6,6 @@ const videoInput = document.getElementById('video-input');
 const messageContainer = document.querySelector('.container');
 const userCountDisplay = document.getElementById('user-count-number');
 
-// Retrieve the username from localStorage
 const userName = localStorage.getItem('username');
 if (userName) {
     socket.emit('new-user-joined', userName);
@@ -66,32 +65,26 @@ const append = (name, message, position, isImage = false, isVideo = false) => {
     }
 };
 
-// Listen for user joined
 socket.on('user-joined', name => {
     append(`${name}`, ` has joined`, 'center');
 });
 
-// Listen for messages
 socket.on('received-message', data => {
     append(`~${data.name}`, data.message, "left");
 });
 
-// Listen for image messages
 socket.on('received-image', data => {
     append(`~${data.name}`, data.image, "left", true);
 });
 
-// Listen for video messages
 socket.on('received-video', data => {
     append(`~${data.name}`, data.video, "left", false, true);
 });
 
-// Listen for users leaving
 socket.on('left', name => {
     append(`${name}`,` left the chat`, 'center');
 });
 
-// Send message
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const message = messageInput.value;
@@ -100,7 +93,6 @@ form.addEventListener('submit', (e) => {
     messageInput.value = '';
 });
 
-// Handle image selection
 imageInput.addEventListener('change', () => {
     const file = imageInput.files[0];
     if (file) {
@@ -114,7 +106,6 @@ imageInput.addEventListener('change', () => {
     }
 });
 
-// Handle video selection
 videoInput.addEventListener('change', () => {
     const file = videoInput.files[0];
     if (file) {
@@ -129,12 +120,10 @@ videoInput.addEventListener('change', () => {
 });
 
 const updateUserCount = (count) => {
-    // Update the user count displayed
     document.getElementById('user-count-number').innerText =`Online ${count}` ;
 };
 
 
-// Listen for user count updates
 socket.on('user-count', count => {
     updateUserCount(count);
 });
