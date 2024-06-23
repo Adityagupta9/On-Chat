@@ -12,9 +12,9 @@ if (userName) {
     socket.emit('new-user-joined', userName);
 }
 
-var audio = new Audio('send.mp3');
-var audio2 = new Audio('recive.mp3');
-var audio3 = new Audio('log.mp4')
+    var audioSend = new Audio('send.mp3');
+    var audioReceive = new Audio('receive.mp3');
+    var audioLog = new Audio('log.mp4');    
 
 const append = (name, message, position, isImage = false, isVideo = false) => {
     const messageWrapper = document.createElement('div');
@@ -58,14 +58,11 @@ const append = (name, message, position, isImage = false, isVideo = false) => {
     messageContainer.scrollTop = messageContainer.scrollHeight;
 
     if (position === "left") {
-        audio.play();
-    }
-    
-    if(position == 'right'){
-        audio.play();
-    }
-    if(position == 'center'){
-        audio3.play();
+        audioReceive.play();
+    } else if (position === 'right') {
+        audioSend.play();
+    } else if (position === 'center') {
+        audioLog.play();
     }
 };
 
