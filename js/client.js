@@ -82,7 +82,7 @@ socket.on('received-video', data => {
 
 // Listen for users leaving
 socket.on('left', name => {
-    append(`${name}`,`left the chat`, 'center');
+    append(`${name}`,` left the chat`, 'center');
 });
 
 // Send message
