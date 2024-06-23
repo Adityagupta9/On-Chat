@@ -13,6 +13,8 @@ if (userName) {
 }
 
 var audio = new Audio('send.mp3');
+var audio2 = new Audio('recive.mp3');
+var audio3 = new Audio('log.mp4')
 
 const append = (name, message, position, isImage = false, isVideo = false) => {
     const messageWrapper = document.createElement('div');
@@ -55,8 +57,15 @@ const append = (name, message, position, isImage = false, isVideo = false) => {
     messageContainer.append(messageWrapper);
     messageContainer.scrollTop = messageContainer.scrollHeight;
 
-    if (position === "left" || position === "center") {
+    if (position === "left") {
         audio.play();
+    }
+    
+    if(position == 'right'){
+        audio.play();
+    }
+    if(position == 'center'){
+        audio3.play();
     }
 };
 
